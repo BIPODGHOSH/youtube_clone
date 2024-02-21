@@ -1,4 +1,4 @@
-import { Button, Stack } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { categories } from "../utils/constants";
 
@@ -35,6 +35,13 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => {
           <span>{item.name}</span>
         </button>
       ))}
+      <Typography
+        className="copyright"
+        variant="body2"
+        sx={{ mt: 1.5, color: "#fff" }}
+      >
+        copyright 2024 Google llc (Bipod GHosh)
+      </Typography>
     </Stack>
   );
 };

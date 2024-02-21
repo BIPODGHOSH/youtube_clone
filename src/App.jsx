@@ -13,7 +13,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
-        <Box sx={{ minHeight: "100vh" }}>
+        <Box sx={{ minHeight: "95vh" }}>
           <Routes>
             <Route path="/" exect element={<Feed />} />
             <Route path="/video/:id" element={<VideoDetails />} />
