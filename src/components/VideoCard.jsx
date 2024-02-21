@@ -20,7 +20,7 @@ const VideoCard = ({ video }) => {
           component="img"
           alt={video.snippet.title}
           image={video?.snippet?.thumbnails?.high?.url}
-          sx={{ width: { xs: "100%", sm: "360px" }, height: 180 }}
+          sx={{ width: { xs: "360", sm: "360px" }, height: 180 }}
         />
       </Link>
       <CardContent
