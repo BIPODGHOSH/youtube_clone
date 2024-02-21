@@ -19,7 +19,12 @@ const Navbar = () => (
   >
     <Link to="/" style={{ display: "flex", alignItems: "center" }}>
       <img src={logo} alt="logo" height={45} />
-      <Typography variant="h6" color={"#fff"} ml={"20px"}>
+      <Typography
+        variant="h6"
+        color={"#fff"}
+        fontSize={{ sm: "15px" }}
+        ml={{ sm: "10px", md: "20px" }}
+      >
         YouTube
         <Typography
           variant="span"
