@@ -30,9 +30,9 @@ const VideoDetails = () => {
   } = videoDetails;
 
   return (
-    <Box minHeight={"95vh"} ml={"20px"}>
+    <Box minHeight={"95vh"} ml={{ md: "20px" }}>
       <Stack direction={{ xs: "column", md: "row" }}>
-        <Box flex={1}>
+        <Box flex={1} mb={{ sm: "20px" }}>
           <Box width="100%" position="sticky" top="80px" borderRadius={"20%"}>
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
@@ -52,6 +52,7 @@ const VideoDetails = () => {
               direction="row"
               justifyContent={"space-between"}
               color={"#fff"}
+              bgcolor={"#373535"}
               pl={2}
             >
               <Link to={`/channel/${channelId}`}>
