@@ -8,7 +8,7 @@ const VideoCard = ({ video }) => {
   return (
     <Card
       sx={{
-        width: { xs: "100%", sm: "360px", md: "340px" },
+        width: { xs: "100%", sm: "360px", md: "320px" },
         boxShadow: "none",
         borderRadius: "none",
         backgroundColor: "black",
