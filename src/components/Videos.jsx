@@ -5,6 +5,7 @@ import ChannelCard from "./ChannelCard";
 
 const Videos = ({ videos, direction }) => {
   // console.log(videos);
+  // if (!videos) return "Loading...";
   return (
     <Stack
       direction={direction || "row"}
@@ -12,7 +13,7 @@ const Videos = ({ videos, direction }) => {
       justifyContent="space-around"
       gap={2}
     >
-      {videos.map((item, i) => (
+      {videos?.map((item, i) => (
         <Box key={i}>
           {item.id.videoId && <VideoCard video={item} />}
           {item?.id?.channelId && <ChannelCard channelDetails={item} />}

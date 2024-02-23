@@ -9,9 +9,10 @@ const SearchFeed = () => {
   const { searchTerm } = useParams();
 
   useEffect(() => {
-    apiData(`search?part=snippet&q=${searchTerm}`).then((data) =>
-      setVideos(data.items)
-    );
+    apiData(`search?part=snippet&q=${searchTerm}`).then((data) => {
+      console.log(data);
+      setVideos(data.items);
+    });
   }, [searchTerm]);
 
   return (

@@ -20,5 +20,6 @@ export const apiData = async (url) => {
     return data;
   } catch (error) {
     console.error(error);
+    throw error;
   }
 };

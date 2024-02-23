@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import { apiData } from "../utils/apiData";
 import ChannelCard from "./ChannelCard";
 import Videos from "./Videos";
-import SideBar from "./SideBar";
 
 const ChannelDetails = () => {
   const [channelDetail, setChannelDetail] = useState(null);
@@ -21,7 +20,7 @@ const ChannelDetails = () => {
       setVideos(data?.items);
     });
     console.log(channelDetail);
-  }, []);
+  }, [id]);
 
   return (
     <Box display="flex">
