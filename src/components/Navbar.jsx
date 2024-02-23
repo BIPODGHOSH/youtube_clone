@@ -22,14 +22,14 @@ const Navbar = () => (
       <Typography
         variant="h6"
         color={"#fff"}
-        fontSize={{ sm: "15px" }}
-        ml={{ sm: "10px", md: "20px" }}
+        fontSize={{ xs: "10px", sm: "12px", md: "30px" }}
+        ml={{ xs: "5px", sm: "10px", md: "20px" }}
       >
         YouTube
         <Typography
           variant="span"
           color={"#868585"}
-          fontSize={"12px"}
+          fontSize={{ xs: "6px", sm: "9px", md: "12px" }}
           position={"fixed"}
           top="8"
         >
